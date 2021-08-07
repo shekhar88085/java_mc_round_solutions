@@ -174,7 +174,7 @@ public class DigitalWallet {
 			// wallet.overview();
 			wallet.tranferMoney("Albus", "Draco", 30.0);
 			wallet.tranferMoney("Hermione", "Harry", 2.0);
-			wallet.tranferMoney("Albus", "Ron", (double) 1 / 100000);
+			//wallet.tranferMoney("Albus", "Ron", (double) 1 / 100000);
 			// wallet.tranferMoney("Albus", "Hardik", 5.0);
 			wallet.overview();
 			wallet.statement("Hardik");
