@@ -97,9 +97,9 @@ public class DigitalWallet {
 		// Credit the amount to receiver
 		accountWallet.put(receiver, receiverCurrentBalance + amount);
 
-		addStatement(sender, receiver, amount, DEBIT);
+		addStatement(sender, receiver, amount, CREDIT);
 		// System.out.println(accountStatement.get(receiver));
-		addStatement(receiver, sender, amount, CREDIT);
+		addStatement(receiver, sender, amount, DEBIT);
 		if (accountWallet.get(sender).equals(accountWallet.get(receiver))) {
 			accountWallet.put(receiver, accountWallet.get(receiver) + OFFER1Amount);
 			accountWallet.put(sender, accountWallet.get(sender) + OFFER1Amount);
