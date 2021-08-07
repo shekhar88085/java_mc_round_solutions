@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -122,7 +124,9 @@ public class DigitalWallet {
 		// 1. statement = sender' name
 		// 2. receiver's name update
 
-		String statement = sender + " " + mode + " " + amount;
+		DateTimeFormatter dtf=DateTimeFormatter.ofPattern("E, MMM dd yyyy HH:mm:ss");
+		
+		String statement = sender + " " + mode + " " + amount+" on "+LocalDateTime.now().format(dtf);
 		if (accountStatement.containsKey(receiver)) {
 			List<String> list = accountStatement.get(receiver);
 			list.add(statement);
