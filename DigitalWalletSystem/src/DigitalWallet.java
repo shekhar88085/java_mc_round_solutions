@@ -158,7 +158,7 @@ public class DigitalWallet {
 			throw new DigitalWalletException("No statement for user = " + name);
 		}
 
-		System.out.println(accountStatement.get(name));
+		System.out.println(name+" State is: "+accountStatement.get(name));
 
 	}
 
