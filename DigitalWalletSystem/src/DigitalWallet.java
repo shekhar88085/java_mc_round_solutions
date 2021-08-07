@@ -177,7 +177,7 @@ public class DigitalWallet {
 			//wallet.tranferMoney("Albus", "Ron", (double) 1 / 100000);
 			// wallet.tranferMoney("Albus", "Hardik", 5.0);
 			wallet.overview();
-			wallet.statement("Hardik");
+			wallet.statement("Harry");
 
 		} catch (Exception e) {
 			e.printStackTrace();
